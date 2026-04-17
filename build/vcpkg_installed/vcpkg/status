@@ -1,0 +1,51 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 63a3ca443fab9494f7145771496b8add2c2ce38249c0faef827f6a4202bf4457
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 8f2153eb6dcca270e064868ddd3737879fc1f23daa19d7e655e2344ecc321fd9
+Status: install ok installed
+
+Package: asio
+Version: 1.32.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 5c3220b7b0c870a1f62d7a3a6a770098b660d3a7767bfd1112dc1aac12d6ed17
+Description: Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach.
+Status: install ok installed
+
+Package: glfw3
+Version: 3.4
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: e548c56d22395a8fc8edf3bd93a5a4fa7584d598655210eeb4653864ffae89c8
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Status: install ok installed
+
+Package: imgui
+Version: 1.92.7
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: e0ac3a85b7e41a21b5d87e75d7f10f342d0c9160b99a390f0697da48e2bd1557
+Description: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies.
+Status: install ok installed
+
+Package: tinyobjloader
+Version: 2.0.0rc13
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 851e7a33c916fb01621dab65d83772efe927f7c2ffd03a8ae804a5c0041db6e2
+Description: Tiny but powerful single file wavefront obj loader
+Status: install ok installed
+
