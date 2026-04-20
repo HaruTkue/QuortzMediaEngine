@@ -49,3 +49,12 @@ Abi: 851e7a33c916fb01621dab65d83772efe927f7c2ffd03a8ae804a5c0041db6e2
 Description: Tiny but powerful single file wavefront obj loader
 Status: install ok installed
 
+Package: glm
+Version: 1.0.3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 8aa083bd3fb316c2d2f1a730e0b16d8301063820fdf312c5ff1d74e6ccb6bd68
+Description: OpenGL Mathematics (GLM)
+Status: install ok installed
+

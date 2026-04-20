@@ -1,119 +1,35 @@
-A suitable version of cmake was not found (required v4.2.3).
-Downloading https://github.com/Kitware/CMake/releases/download/v4.2.3/cmake-4.2.3-linux-x86_64.tar.gz -> cmake-4.2.3-linux-x86_64.tar.gz
-Successfully downloaded cmake-4.2.3-linux-x86_64.tar.gz
-Extracting cmake...
 Detecting compiler hash for triplet x64-linux...
 Compiler found: /usr/bin/c++
-The following packages will be built and installed:
+The following packages are already installed:
     asio:x64-linux@1.32.0
     glfw3:x64-linux@3.4#1
     imgui:x64-linux@1.92.7
     tinyobjloader:x64-linux@2.0.0rc13
   * vcpkg-cmake:x64-linux@2024-04-23
   * vcpkg-cmake-config:x64-linux@2024-05-23
-Additional packages (*) will be modified to complete this operation.
-Restored 0 package(s) from /home/haru/.cache/vcpkg/archives in 5.14 ms. Use --debug to see more details.
-Installing 1/6 vcpkg-cmake-config:x64-linux@2024-05-23...
-vcpkg-cmake-config:x64-linux@2024-05-23 package ABI: 63a3ca443fab9494f7145771496b8add2c2ce38249c0faef827f6a4202bf4457
-Building vcpkg-cmake-config:x64-linux@2024-05-23...
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg-port-config.cmake
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/copyright
--- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
-Starting submission of vcpkg-cmake-config:x64-linux@2024-05-23 to 1 binary cache(s) in the background
-Elapsed time to handle vcpkg-cmake-config:x64-linux: 33.2 ms
-Installing 2/6 vcpkg-cmake:x64-linux@2024-04-23...
-vcpkg-cmake:x64-linux@2024-04-23 package ABI: 8f2153eb6dcca270e064868ddd3737879fc1f23daa19d7e655e2344ecc321fd9
-Building vcpkg-cmake:x64-linux@2024-04-23...
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_build.cmake
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_install.cmake
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg-port-config.cmake
--- Installing: /home/haru/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/copyright
--- Performing post-build validation
-Starting submission of vcpkg-cmake:x64-linux@2024-04-23 to 1 binary cache(s) in the background
-Elapsed time to handle vcpkg-cmake:x64-linux: 37.1 ms
-Completed submission of vcpkg-cmake-config:x64-linux@2024-05-23 to 1 binary cache(s) in 11.2 ms
-Installing 3/6 asio:x64-linux@1.32.0...
-asio:x64-linux@1.32.0 package ABI: 5c3220b7b0c870a1f62d7a3a6a770098b660d3a7767bfd1112dc1aac12d6ed17
-Building asio:x64-linux@1.32.0...
-Downloading https://github.com/chriskohlhoff/asio/archive/asio-1-32-0.tar.gz -> chriskohlhoff-asio-asio-1-32-0.tar.gz
-Successfully downloaded chriskohlhoff-asio-asio-1-32-0.tar.gz
--- Extracting source /home/haru/vcpkg/downloads/chriskohlhoff-asio-asio-1-32-0.tar.gz
--- Using source at /home/haru/vcpkg/buildtrees/asio/src/sio-1-32-0-e4cfb7a1b9.clean
--- Configuring x64-linux
--- Building x64-linux-rel
--- Fixing pkgconfig file: /home/haru/vcpkg/packages/asio_x64-linux/share/pkgconfig/asio.pc
--- Installing: /home/haru/vcpkg/packages/asio_x64-linux/share/asio/asio-config.cmake
--- Installing: /home/haru/vcpkg/packages/asio_x64-linux/share/asio/copyright
--- Performing post-build validation
-Starting submission of asio:x64-linux@1.32.0 to 1 binary cache(s) in the background
-Elapsed time to handle asio:x64-linux: 2.3 s
-Completed submission of vcpkg-cmake:x64-linux@2024-04-23 to 1 binary cache(s) in 4.6 ms
-Installing 4/6 glfw3:x64-linux@3.4#1...
-glfw3:x64-linux@3.4#1 package ABI: e548c56d22395a8fc8edf3bd93a5a4fa7584d598655210eeb4653864ffae89c8
-Building glfw3:x64-linux@3.4#1...
-Downloading https://github.com/glfw/glfw/archive/3.4.tar.gz -> glfw-glfw-3.4.tar.gz
-Successfully downloaded glfw-glfw-3.4.tar.gz
--- Extracting source /home/haru/vcpkg/downloads/glfw-glfw-3.4.tar.gz
--- Using source at /home/haru/vcpkg/buildtrees/glfw3/src/3.4-2448ff4533.clean
-GLFW3 currently requires the following libraries from the system package manager:
-    xinerama
-    xcursor
-    xorg
-    libglu1-mesa
-    pkg-config
-
-These can be installed on Ubuntu systems via sudo apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev pkg-config
-
-Alternatively, when targeting the Wayland display server, use the packages listed in the GLFW documentation here:
-
-https://www.glfw.org/docs/3.3/compile.html#compile_deps_wayland
+The following packages will be built and installed:
+    glm:x64-linux@1.0.3
+Restored 0 package(s) from /home/haru/.cache/vcpkg/archives in 18.9 ms. Use --debug to see more details.
+Installing 1/1 glm:x64-linux@1.0.3...
+glm:x64-linux@1.0.3 package ABI: 8aa083bd3fb316c2d2f1a730e0b16d8301063820fdf312c5ff1d74e6ccb6bd68
+Building glm:x64-linux@1.0.3...
+Downloading https://github.com/g-truc/glm/archive/1.0.3.tar.gz -> g-truc-glm-1.0.3.tar.gz
+Successfully downloaded g-truc-glm-1.0.3.tar.gz
+-- Extracting source /home/haru/vcpkg/downloads/g-truc-glm-1.0.3.tar.gz
+-- Using source at /home/haru/vcpkg/buildtrees/glm/src/1.0.3-65552ff9f1.clean
 -- Configuring x64-linux
 -- Building x64-linux-dbg
 -- Building x64-linux-rel
--- Fixing pkgconfig file: /home/haru/vcpkg/packages/glfw3_x64-linux/lib/pkgconfig/glfw3.pc
--- Fixing pkgconfig file: /home/haru/vcpkg/packages/glfw3_x64-linux/debug/lib/pkgconfig/glfw3.pc
--- Installing: /home/haru/vcpkg/packages/glfw3_x64-linux/share/glfw3/copyright
+-- Installing: /home/haru/vcpkg/packages/glm_x64-linux/share/glm/copyright
+-- Installing: /home/haru/vcpkg/packages/glm_x64-linux/share/glm/usage
+Downloading https://github.com/NixOS/patchelf/releases/download/0.15.5/patchelf-0.15.5-x86_64.tar.gz -> patchelf-0.15.5-x86_64.tar.gz
+Successfully downloaded patchelf-0.15.5-x86_64.tar.gz
 -- Performing post-build validation
-Starting submission of glfw3:x64-linux@3.4#1 to 1 binary cache(s) in the background
-Elapsed time to handle glfw3:x64-linux: 5.4 s
-Completed submission of asio:x64-linux@1.32.0 to 1 binary cache(s) in 126 ms
-Installing 5/6 imgui:x64-linux@1.92.7...
-imgui:x64-linux@1.92.7 package ABI: e0ac3a85b7e41a21b5d87e75d7f10f342d0c9160b99a390f0697da48e2bd1557
-Building imgui:x64-linux@1.92.7...
-Downloading https://github.com/ocornut/imgui/archive/v1.92.7.tar.gz -> ocornut-imgui-v1.92.7.tar.gz
-Successfully downloaded ocornut-imgui-v1.92.7.tar.gz
--- Extracting source /home/haru/vcpkg/downloads/ocornut-imgui-v1.92.7.tar.gz
--- Using source at /home/haru/vcpkg/buildtrees/imgui/src/v1.92.7-b588f89316.clean
--- Configuring x64-linux
--- Building x64-linux-dbg
--- Building x64-linux-rel
--- Installing: /home/haru/vcpkg/packages/imgui_x64-linux/share/imgui/copyright
--- Performing post-build validation
-Starting submission of imgui:x64-linux@1.92.7 to 1 binary cache(s) in the background
-Elapsed time to handle imgui:x64-linux: 15 s
-Completed submission of glfw3:x64-linux@3.4#1 to 1 binary cache(s) in 172 ms
-Installing 6/6 tinyobjloader:x64-linux@2.0.0rc13...
-tinyobjloader:x64-linux@2.0.0rc13 package ABI: 851e7a33c916fb01621dab65d83772efe927f7c2ffd03a8ae804a5c0041db6e2
-Building tinyobjloader:x64-linux@2.0.0rc13...
-Downloading https://github.com/syoyo/tinyobjloader/archive/v2.0.0rc13.tar.gz -> syoyo-tinyobjloader-v2.0.0rc13.tar.gz
-Successfully downloaded syoyo-tinyobjloader-v2.0.0rc13.tar.gz
--- Extracting source /home/haru/vcpkg/downloads/syoyo-tinyobjloader-v2.0.0rc13.tar.gz
--- Using source at /home/haru/vcpkg/buildtrees/tinyobjloader/src/v2.0.0rc13-75ee586e9b.clean
--- Configuring x64-linux
--- Building x64-linux-dbg
--- Building x64-linux-rel
--- Fixing pkgconfig file: /home/haru/vcpkg/packages/tinyobjloader_x64-linux/lib/pkgconfig/tinyobjloader.pc
--- Fixing pkgconfig file: /home/haru/vcpkg/packages/tinyobjloader_x64-linux/debug/lib/pkgconfig/tinyobjloader.pc
--- Performing post-build validation
-Starting submission of tinyobjloader:x64-linux@2.0.0rc13 to 1 binary cache(s) in the background
-Elapsed time to handle tinyobjloader:x64-linux: 7.3 s
+Starting submission of glm:x64-linux@1.0.3 to 1 binary cache(s) in the background
+Elapsed time to handle glm:x64-linux: 11 s
 Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
 Packages installed in this vcpkg installation declare the following licenses:
-BSL-1.0
 MIT
-Zlib
 asio provides CMake targets:
 
   # this is heuristically generated, and may not be correct
@@ -136,6 +52,15 @@ glfw3 provides pkg-config modules:
   # A multi-platform library for OpenGL, window and input
   glfw3
 
+The package glm provides CMake targets:
+
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm)
+
+    # Or use the header-only version
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm-header-only)
+
 imgui provides CMake targets:
 
   # this is heuristically generated, and may not be correct
@@ -153,7 +78,6 @@ tinyobjloader provides pkg-config modules:
   # Tiny but powerful single file wavefront obj loader
   tinyobjloader
 
-Completed submission of imgui:x64-linux@1.92.7 to 1 binary cache(s) in 503 ms
 Waiting for 1 remaining binary cache submissions...
-Completed submission of tinyobjloader:x64-linux@2.0.0rc13 to 1 binary cache(s) in 104 ms (1/1)
-All requested installations completed successfully in: 30 s
+Completed submission of glm:x64-linux@1.0.3 to 1 binary cache(s) in 170 ms (1/1)
+All requested installations completed successfully in: 11 s

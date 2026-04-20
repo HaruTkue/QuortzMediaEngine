@@ -182,8 +182,8 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/haru/vcpkg/scripts/buildsystems/vcpkg.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:STRING=~/vcpkg/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -277,11 +277,14 @@ Z_VCPKG_CL:FILEPATH=Z_VCPKG_CL-NOTFOUND
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed
 
+//The directory containing a CMake configuration file for asio.
+asio_DIR:PATH=/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/share/asio
+
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/share/glfw3
 
 //The directory containing a CMake configuration file for glm.
-glm_DIR:PATH=glm_DIR-NOTFOUND
+glm_DIR:PATH=/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/share/glm
 
 
 ########################
