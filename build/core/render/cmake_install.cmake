@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/dev_data/Develop/QuortzMediaEngine/editor
+# Install script for directory: /mnt/dev_data/Develop/QuortzMediaEngine/core/render
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,35 +1,23 @@
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
+/mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/vcpkg/vcpkg-running.lock: note: waiting to take filesystem lock...
 Detecting compiler hash for triplet x64-linux...
 Compiler found: /usr/bin/c++
 The following packages are already installed:
     asio:x64-linux@1.32.0
     glfw3:x64-linux@3.4#1
+    glm:x64-linux@1.0.3
     imgui:x64-linux@1.92.7
     tinyobjloader:x64-linux@2.0.0rc13
   * vcpkg-cmake:x64-linux@2024-04-23
   * vcpkg-cmake-config:x64-linux@2024-05-23
-The following packages will be built and installed:
-    glm:x64-linux@1.0.3
-Restored 0 package(s) from /home/haru/.cache/vcpkg/archives in 18.9 ms. Use --debug to see more details.
-Installing 1/1 glm:x64-linux@1.0.3...
-glm:x64-linux@1.0.3 package ABI: 8aa083bd3fb316c2d2f1a730e0b16d8301063820fdf312c5ff1d74e6ccb6bd68
-Building glm:x64-linux@1.0.3...
-Downloading https://github.com/g-truc/glm/archive/1.0.3.tar.gz -> g-truc-glm-1.0.3.tar.gz
-Successfully downloaded g-truc-glm-1.0.3.tar.gz
--- Extracting source /home/haru/vcpkg/downloads/g-truc-glm-1.0.3.tar.gz
--- Using source at /home/haru/vcpkg/buildtrees/glm/src/1.0.3-65552ff9f1.clean
--- Configuring x64-linux
--- Building x64-linux-dbg
--- Building x64-linux-rel
--- Installing: /home/haru/vcpkg/packages/glm_x64-linux/share/glm/copyright
--- Installing: /home/haru/vcpkg/packages/glm_x64-linux/share/glm/usage
-Downloading https://github.com/NixOS/patchelf/releases/download/0.15.5/patchelf-0.15.5-x86_64.tar.gz -> patchelf-0.15.5-x86_64.tar.gz
-Successfully downloaded patchelf-0.15.5-x86_64.tar.gz
--- Performing post-build validation
-Starting submission of glm:x64-linux@1.0.3 to 1 binary cache(s) in the background
-Elapsed time to handle glm:x64-linux: 11 s
-Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
-Packages installed in this vcpkg installation declare the following licenses:
-MIT
 asio provides CMake targets:
 
   # this is heuristically generated, and may not be correct
@@ -78,6 +66,4 @@ tinyobjloader provides pkg-config modules:
   # Tiny but powerful single file wavefront obj loader
   tinyobjloader
 
-Waiting for 1 remaining binary cache submissions...
-Completed submission of glm:x64-linux@1.0.3 to 1 binary cache(s) in 170 ms (1/1)
-All requested installations completed successfully in: 11 s
+All requested installations completed successfully in: 116 us

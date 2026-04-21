@@ -9,7 +9,7 @@
 					"childIndexes" : 
 					[
 						1,
-						6
+						7
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -26,7 +26,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"jsonFile" : "directory-core-Debug-eac7e466be7743a8be0a.json",
 					"minimumCMakeVersion" : 
@@ -82,6 +83,22 @@
 					"source" : "core/physical"
 				},
 				{
+					"build" : "core/render",
+					"jsonFile" : "directory-core.render-Debug-7489e297672bd854e89b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "core/render",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
 					"build" : "editor",
 					"jsonFile" : "directory-editor-Debug-ba6a32e4025a2cdfed87.json",
 					"minimumCMakeVersion" : 
@@ -105,12 +122,34 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					],
-					"name" : "QuortzMediaEngine"
+					"name" : "QuortzMediaEngine",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
 				}
 			],
-			"targets" : []
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 6,
+					"id" : "QuortzMediaEngine::@509e33518be291f9b8da",
+					"jsonFile" : "target-QuortzMediaEngine-Debug-28df2b3b31fb1183f982.json",
+					"name" : "QuortzMediaEngine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "engine_renderer::@509e33518be291f9b8da",
+					"jsonFile" : "target-engine_renderer-Debug-5cf6065961b7ac26066e.json",
+					"name" : "engine_renderer",
+					"projectIndex" : 0
+				}
+			]
 		}
 	],
 	"kind" : "codemodel",

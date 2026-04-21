@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
+  "command": "/usr/bin/g++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/main.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/main.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/main.cpp",
+  "output": "core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o"
+},
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
+  "command": "/usr/bin/g++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
+  "output": "core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o"
+},
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
+  "command": "/usr/bin/g++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/vulkan_context.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/vulkan_context.cpp",
+  "output": "core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o"
+},
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
+  "command": "/usr/bin/g++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -g -std=gnu++17 -o CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
+  "output": "core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o"
+}
+]

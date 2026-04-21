@@ -6,8 +6,12 @@
 #include <string>
 #include <cstring>
 #include <exception>
+#include <stdexcept>
+#include <sstream>
+#include <iostream>
 
 #include "./command_buffer.h"
+#include "./surface_provider.h"
 
 class Swapchain;
 class CommandBuffer;
@@ -35,7 +39,7 @@ class VulkanContext{
         VkCommandPool GetCommandPool() const {return m_commandPool;}
         VkSurfaceKHR GetSurface() const {return m_surface;}
         //commnad buffer create
-        std::shared_ptr<CommandBuffer> CreateCOmmandBuffer();
+        std::shared_ptr<CommandBuffer> CreateCommandBuffer();
         void FreeDescriptorSet(VkDescriptorSet descriptorSet);
 
     //定義
@@ -49,9 +53,9 @@ class VulkanContext{
         //command 実行
         void SubmitPresent();
         void SubmitAndWait();
-        FrameContext* GetCurrentFrameIndex;
+        FrameContext* GetCurrentFrameContext();
         //swapchain
-        //std::unique_ptr<Swapchain>& GetSwapchain() const {return m_swapchain;}
+        std::unique_ptr<Swapchain>& GetSwapchain() {return m_swapchain;}
         //memory type
         uint32_t FindMemoryType(const VkMemoryRequirements& requirements , VkMemoryPropertyFlags properties) const;
 
