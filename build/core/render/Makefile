@@ -144,6 +144,30 @@ QuortzMediaEngine/fast:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/build
 .PHONY : QuortzMediaEngine/fast
 
+src/GLFWSurfaceProvider.o: src/GLFWSurfaceProvider.cpp.o
+.PHONY : src/GLFWSurfaceProvider.o
+
+# target to build an object file
+src/GLFWSurfaceProvider.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o
+.PHONY : src/GLFWSurfaceProvider.cpp.o
+
+src/GLFWSurfaceProvider.i: src/GLFWSurfaceProvider.cpp.i
+.PHONY : src/GLFWSurfaceProvider.i
+
+# target to preprocess a source file
+src/GLFWSurfaceProvider.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.i
+.PHONY : src/GLFWSurfaceProvider.cpp.i
+
+src/GLFWSurfaceProvider.s: src/GLFWSurfaceProvider.cpp.s
+.PHONY : src/GLFWSurfaceProvider.s
+
+# target to generate assembly for a file
+src/GLFWSurfaceProvider.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.s
+.PHONY : src/GLFWSurfaceProvider.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -229,6 +253,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... QuortzMediaEngine"
 	@echo "... engine_renderer"
+	@echo "... src/GLFWSurfaceProvider.o"
+	@echo "... src/GLFWSurfaceProvider.i"
+	@echo "... src/GLFWSurfaceProvider.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

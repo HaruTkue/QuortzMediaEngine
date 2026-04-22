@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -o QuortzMediaEngine 
+/usr/bin/c++ -g CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -o QuortzMediaEngine 

@@ -186,5 +186,24 @@ void VulkanContext::SetDebugObjectName(void* objectHandle,  VkObjectType type , 
 //surface 作成
 void VulkanContext::CreateSurface(){
     m_surface = m_surfaceProvider->CreateSurface(m_vkInstance);
-    
+    //graphics
+    VkBool32 present = false;
+    vkGetPhysicalDeviceSurfaceSupportKHR(m_vkPhysicalDevice,  m_graphicsQueueFamilyIndex , m_surface , &present);
+    if (present == VK_FALSE){
+        throw std::runtime_error("not supported presentation");
+    }
+}
+//swapchain
+void VulkanContext::RecreateSwapchain(){
+    if(m_swapchain == nullptr){
+        m_swapchain = std::make_unique<Swapchain>();
+    }
+    if(m_swapchain == VK_NULL_HANDLE){
+        CreateSurface();
+    }
+    auto width = m_surfaceProvider ->GetFramebufferWidth();
+    auto height= m_surfaceProvider ->GetFramebufferHeight();
+    m_swapchain->Recreate(width, height);
+
+
 }

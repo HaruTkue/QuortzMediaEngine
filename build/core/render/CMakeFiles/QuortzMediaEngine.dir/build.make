@@ -73,15 +73,15 @@ core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o: core/render/CMa
 core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o: /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp
 core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o: core/render/CMakeFiles/QuortzMediaEngine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o"
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -MF CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o.d -o CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -MF CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o.d -o CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp
 
 core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.i"
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp > CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.i
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp > CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.i
 
 core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.s"
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp -o CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.s
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp -o CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.s
 
 # Object files for target QuortzMediaEngine
 QuortzMediaEngine_OBJECTS = \

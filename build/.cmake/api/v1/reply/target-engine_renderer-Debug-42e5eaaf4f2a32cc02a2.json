@@ -93,7 +93,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -113,12 +114,19 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "core/render/src/GLFWSurfaceProvider.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
