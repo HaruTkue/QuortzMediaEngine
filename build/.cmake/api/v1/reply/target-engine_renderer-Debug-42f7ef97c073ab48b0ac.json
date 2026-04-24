@@ -94,7 +94,8 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -115,7 +116,8 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -131,6 +133,12 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "core/render/src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "core/render/src/swapchain.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

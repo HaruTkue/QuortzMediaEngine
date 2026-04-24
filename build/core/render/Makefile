@@ -192,6 +192,30 @@ src/main.cpp.s:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/swapchain.o: src/swapchain.cpp.o
+.PHONY : src/swapchain.o
+
+# target to build an object file
+src/swapchain.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o
+.PHONY : src/swapchain.cpp.o
+
+src/swapchain.i: src/swapchain.cpp.i
+.PHONY : src/swapchain.i
+
+# target to preprocess a source file
+src/swapchain.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.i
+.PHONY : src/swapchain.cpp.i
+
+src/swapchain.s: src/swapchain.cpp.s
+.PHONY : src/swapchain.s
+
+# target to generate assembly for a file
+src/swapchain.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.s
+.PHONY : src/swapchain.cpp.s
+
 src/viewtest.o: src/viewtest.cpp.o
 .PHONY : src/viewtest.o
 
@@ -259,6 +283,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/swapchain.o"
+	@echo "... src/swapchain.i"
+	@echo "... src/swapchain.s"
 	@echo "... src/viewtest.o"
 	@echo "... src/viewtest.i"
 	@echo "... src/viewtest.s"

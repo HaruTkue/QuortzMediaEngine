@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/main.cpp.o"
   "CMakeFiles/engine_renderer.dir/src/main.cpp.o.d"
+  "CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o"
+  "CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o"
   "CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o"

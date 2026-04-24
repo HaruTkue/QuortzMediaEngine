@@ -12,6 +12,7 @@
 
 #include "./command_buffer.h"
 #include "./surface_provider.h"
+#include "./swapchain.h"
 
 class Swapchain;
 class CommandBuffer;

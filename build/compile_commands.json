@@ -13,6 +13,12 @@
 },
 {
   "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
+  "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/swapchain.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/swapchain.cpp",
+  "output": "core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o"
+},
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
   "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
   "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
   "output": "core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o"

@@ -34,9 +34,9 @@ class Swapchain
 
         struct FrameContext{
             VkSemaphore renderComplete = VK_NULL_HANDLE;
-            VkSemaphore presentCOmplete= VK_NULL_HANDLE;
+            VkSemaphore presentComplete= VK_NULL_HANDLE;
         };
-        std::vector<FrameContext> m_Frames;
+        std::vector<FrameContext> m_frames;
         std::vector<VkSemaphore> m_presentSemaphoreList;
 
         friend class VulkanContext;

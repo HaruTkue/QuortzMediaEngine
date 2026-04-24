@@ -1,5 +1,5 @@
 #include "../include/vulkan_context.h"
-
+#include <cassert>
 void VulkanContext::Initialize(const char* appName , ISurfaceProvider* surfacePrivder){
     m_surfaceProvider = surfacePrivder;
     CreateInstance(appName);
@@ -205,5 +205,59 @@ void VulkanContext::RecreateSwapchain(){
     auto height= m_surfaceProvider ->GetFramebufferHeight();
     m_swapchain->Recreate(width, height);
 
+    DestoryFrameContexts();
+    CreateFrameContexts();
 
+
+
+}
+    std::shared_ptr<CommandBuffer> VulkanContext::CreateCommandBuffer(){
+        VkCommandBufferAllocateInfo commandAI {
+            .sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO,
+            .commandPool = m_commandPool,
+            .level  =VK_COMMAND_BUFFER_LEVEL_PRIMARY,
+            .commandBufferCount = 1,
+        };
+        VkCommandBuffer commandBuffer{};
+        vkAllocateCommandBuffers(m_vkDevice, &commandAI , &commandBuffer);
+        return std::make_shared<CommandBuffer>(commandBuffer);
+    }
+
+
+void VulkanContext::CreateFrameContexts(){
+    m_frameContext.resize(MaxInflightFrames);
+    for (auto& frame : m_frameContext){
+        VkFenceCreateInfo fenceCI{
+            .sType = VK_STRUCTURE_TYPE_FENCE_CREATE_INFO,
+            .flags = VK_FENCE_CREATE_SIGNALED_BIT,
+        };
+        vkCreateFence(m_vkDevice , &fenceCI , nullptr , &frame.inflightFence);
+    }
+}
+
+//submit
+void VulkanContext::SubmitPresent(){
+    auto& frame =  m_frameContext[GetCurrentFrameIndex()];
+    VkPipelineStageFlags waitStageMask = VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
+    VkSubmitInfo submitInfo{
+        .sType = VK_STRUCTURE_TYPE_SUBMIT_INFO
+    };
+    VkSemaphore renderCompleteSem = m_swapchain->GetRenderCompleteSemaphore();
+    VkSemaphore presentCompleteSem = m_swapchain->GetPresentCompleteSemaphore();
+    VkCommandBuffer CommandBuffer = frame.commandBuffer->Get();
+    submitInfo.commandBufferCount = 1;
+    submitInfo.pCommandBuffers = &CommandBuffer;
+    submitInfo.pWaitDstStageMask = &waitStageMask;
+    submitInfo.waitSemaphoreCount = 1;
+    submitInfo.pWaitSemaphores  =&presentCompleteSem;
+    submitInfo.signalSemaphoreCount = 1;
+    submitInfo.pSignalSemaphores = &renderCompleteSem;
+    auto result = vkQueueSubmit(m_graphicsQueue , 1 , &submitInfo , frame.inflightFence);
+    assert(result  != VK_ERROR_DEVICE_LOST);
+    
+    m_swapchain ->QueuePresent(m_graphicsQueue);
+    AdvanceFrame();
+}
+void VulkanContext::AdvanceFrame(){
+    m_currentFrameIndex = (m_currentFrameIndex + 1 ) % MaxInflightFrames;
 }
