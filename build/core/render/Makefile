@@ -216,6 +216,30 @@ src/draw.cpp.s:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.s
 .PHONY : src/draw.cpp.s
 
+src/image_barrier.o: src/image_barrier.cpp.o
+.PHONY : src/image_barrier.o
+
+# target to build an object file
+src/image_barrier.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o
+.PHONY : src/image_barrier.cpp.o
+
+src/image_barrier.i: src/image_barrier.cpp.i
+.PHONY : src/image_barrier.i
+
+# target to preprocess a source file
+src/image_barrier.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.i
+.PHONY : src/image_barrier.cpp.i
+
+src/image_barrier.s: src/image_barrier.cpp.s
+.PHONY : src/image_barrier.s
+
+# target to generate assembly for a file
+src/image_barrier.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.s
+.PHONY : src/image_barrier.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -334,6 +358,9 @@ help:
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
+	@echo "... src/image_barrier.o"
+	@echo "... src/image_barrier.i"
+	@echo "... src/image_barrier.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -111,10 +111,24 @@ core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine_renderer.dir/src/draw.cpp.s"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/draw.cpp -o CMakeFiles/engine_renderer.dir/src/draw.cpp.s
 
+core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o: core/render/CMakeFiles/engine_renderer.dir/flags.make
+core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o: /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/image_barrier.cpp
+core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o: core/render/CMakeFiles/engine_renderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o"
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o -MF CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o.d -o CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/image_barrier.cpp
+
+core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.i"
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/image_barrier.cpp > CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.i
+
+core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.s"
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/image_barrier.cpp -o CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.s
+
 core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o: core/render/CMakeFiles/engine_renderer.dir/flags.make
 core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o: /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/main.cpp
 core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o: core/render/CMakeFiles/engine_renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o -MF CMakeFiles/engine_renderer.dir/src/main.cpp.o.d -o CMakeFiles/engine_renderer.dir/src/main.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/main.cpp
 
 core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.i: cmake_force
@@ -128,7 +142,7 @@ core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.s: cmake_force
 core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o: core/render/CMakeFiles/engine_renderer.dir/flags.make
 core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o: /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/swapchain.cpp
 core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o: core/render/CMakeFiles/engine_renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o -MF CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o.d -o CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/swapchain.cpp
 
 core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.i: cmake_force
@@ -142,7 +156,7 @@ core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.s: cmake_force
 core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o: core/render/CMakeFiles/engine_renderer.dir/flags.make
 core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o: /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp
 core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o: core/render/CMakeFiles/engine_renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o -MF CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o.d -o CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp
 
 core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.i: cmake_force
@@ -156,7 +170,7 @@ core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.s: cmake_force
 core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o: core/render/CMakeFiles/engine_renderer.dir/flags.make
 core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o: /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/vulkan_context.cpp
 core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o: core/render/CMakeFiles/engine_renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o -MF CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o.d -o CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/vulkan_context.cpp
 
 core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.i: cmake_force
@@ -172,6 +186,7 @@ engine_renderer_OBJECTS = \
 "CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o" \
 "CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o" \
 "CMakeFiles/engine_renderer.dir/src/draw.cpp.o" \
+"CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o" \
 "CMakeFiles/engine_renderer.dir/src/main.cpp.o" \
 "CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o" \
 "CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o" \
@@ -183,13 +198,14 @@ engine_renderer_EXTERNAL_OBJECTS =
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.o
+core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/build.make
 core/render/libengine_renderer.a: core/render/CMakeFiles/engine_renderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libengine_renderer.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libengine_renderer.a"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && $(CMAKE_COMMAND) -P CMakeFiles/engine_renderer.dir/cmake_clean_target.cmake
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine_renderer.dir/link.txt --verbose=$(VERBOSE)
 

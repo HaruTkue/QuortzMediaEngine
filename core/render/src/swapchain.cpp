@@ -181,3 +181,16 @@ VkSemaphore Swapchain::GetPresentCompleteSemaphore() const{
 VkSemaphore Swapchain::GetRenderCompleteSemaphore() const {
     return m_frames[m_currentIndex].renderComplete;
 }
+void Swapchain::Cleanup(){
+    auto& vulkanCtx = VulkanContext::Get();
+    auto vkDevice = vulkanCtx.GetVkDevice();
+    for (auto& view: m_imageViews){
+        vkDestoryImageView(vkDevice, view , nullptr);
+    }
+    if (m_swapchain){
+        vkDestorySwapchainKHR(vkDevice,  m_swapchain , nullptr);
+        m_swapchain = VK_NULL_HANDLE;
+    }
+    m_images.clear();
+    m_imageViews.clear();
+}

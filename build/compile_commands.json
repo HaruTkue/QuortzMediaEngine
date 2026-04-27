@@ -19,6 +19,12 @@
 },
 {
   "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
+  "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/image_barrier.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/image_barrier.cpp",
+  "output": "core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o"
+},
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
   "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/main.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/main.cpp",
   "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/main.cpp",
   "output": "core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o"

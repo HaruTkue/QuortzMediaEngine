@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/GLFWSurfaceProvider.cpp" "core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o" "gcc" "core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o.d"
   "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/command_buffer.cpp" "core/render/CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o" "gcc" "core/render/CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o.d"
   "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/draw.cpp" "core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.o" "gcc" "core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.o.d"
+  "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/image_barrier.cpp" "core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o" "gcc" "core/render/CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o.d"
   "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/main.cpp" "core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o" "gcc" "core/render/CMakeFiles/engine_renderer.dir/src/main.cpp.o.d"
   "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/swapchain.cpp" "core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o" "gcc" "core/render/CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o.d"
   "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp" "core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o" "gcc" "core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o.d"

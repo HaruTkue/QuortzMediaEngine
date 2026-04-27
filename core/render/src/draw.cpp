@@ -29,10 +29,27 @@ void Draw::OnDrawFrame(){
         ImageLayoutTransition::FromUndefinedToColorAttachment()
     );
 
-    auto imageView = Swapchain->GetCurrentImage();
+    auto imageView = Swapchain->GetCurrentView();
     auto extent = Swapchain->GetExtent();
 
-    VkRenderingAttachmentI
+    VkRenderingAttachmentInfo colorAttachment{
+        .sType = VK_STRUCTURE_TYPE_RENDERING_ATTACHMENT_INFO,
+        .imageView = imageView,
+        .imageLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL,
+        .loadOp = VK_ATTACHMENT_LOAD_OP_CLEAR,
+        .storeOp= VK_ATTACHMENT_STORE_OP_STORE,
+        .clearValue = VkClearValue{ .color = {{0.6f , 0.2f, 0.3f , 1.0f}}}
+    };
+    VkRenderingInfo renderingInfo{
+        .sType = VK_STRUCTURE_TYPE_RENDERING_INFO,
+        .renderArea = {{0,0} , extent},
+        .layerCount = 1,
+        .colorAttachmentCount = 1,
+        .pColorAttachments = &colorAttachment
+    };
+    vkCmdBeginRendering(*commandBuffer,  &renderingInfo);
+    vkCmdEndRendering(*commandBuffer);
+
     //Layout 表示
     commandBuffer->TransitionLayout(
         Swapchain->GetCurrentImage(), range,

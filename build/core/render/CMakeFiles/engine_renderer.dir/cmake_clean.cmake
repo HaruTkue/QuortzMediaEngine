@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/draw.cpp.o"
   "CMakeFiles/engine_renderer.dir/src/draw.cpp.o.d"
+  "CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o"
+  "CMakeFiles/engine_renderer.dir/src/image_barrier.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/main.cpp.o"
   "CMakeFiles/engine_renderer.dir/src/main.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/swapchain.cpp.o"

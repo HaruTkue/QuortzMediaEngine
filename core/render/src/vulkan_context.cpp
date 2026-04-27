@@ -1,4 +1,6 @@
 #include "../include/vulkan_context.h"
+#include "../include/command_buffer.h"
+
 #include <cassert>
 void VulkanContext::Initialize(const char* appName , ISurfaceProvider* surfacePrivder){
     m_surfaceProvider = surfacePrivder;
@@ -260,4 +262,39 @@ void VulkanContext::SubmitPresent(){
 }
 void VulkanContext::AdvanceFrame(){
     m_currentFrameIndex = (m_currentFrameIndex + 1 ) % MaxInflightFrames;
+}
+
+void VulkanContext::Cleanup(){
+    vkDeviceWaitIdle(m_vkDevice);
+    DestoryFrameContexts();
+    vkDestoryCommandPool(m_vkDevice, m_commandPool , nullptr);
+
+    if(m_debugMessenger != VK_NULL_HANDLE){
+        auto func = VK_GET_INSTANCE_PROC_ADDR(m_vkInstance , vkDestroyDebugUtilsMessengerEXT);
+        if (func != nullptr){
+            func(m_vkInstance, m_debugMessenger , nullptr);
+        }
+        m_debugMessenger = VK_NULL_HANDLE;
+    }
+
+    if (m_swapchain)
+    {
+        m_swapchain->Cleanup();
+        m_swapchain.reset();
+    }
+    if (m_surface != VK_NULL_HANDLE){
+        vkDestroySurfaceKHR(m_vkInstance, m_surface , nullptr);
+        m_surface = VK_NULL_HANDLE;
+    }
+
+    vkDestoryDevice(m_vkDevice, nullptr);
+    vkDestoryInstance(m_vkInstance, nullptr);
+    m_vkDevice = VK_NULL_HANDLE;
+    m_vkInstance = VK_NULL_HANDLE;
+}
+void VulkanContext::DestoryFrameContexts(){
+    for (auto& frame : m_frameContext){
+        vkDestoryFence(m_vkDevice , frame.inflightFence, nullptr);
+    }
+    m_frameContext.clear();
 }
