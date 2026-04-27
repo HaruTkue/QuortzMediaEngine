@@ -168,6 +168,54 @@ src/GLFWSurfaceProvider.cpp.s:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.s
 .PHONY : src/GLFWSurfaceProvider.cpp.s
 
+src/command_buffer.o: src/command_buffer.cpp.o
+.PHONY : src/command_buffer.o
+
+# target to build an object file
+src/command_buffer.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o
+.PHONY : src/command_buffer.cpp.o
+
+src/command_buffer.i: src/command_buffer.cpp.i
+.PHONY : src/command_buffer.i
+
+# target to preprocess a source file
+src/command_buffer.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.i
+.PHONY : src/command_buffer.cpp.i
+
+src/command_buffer.s: src/command_buffer.cpp.s
+.PHONY : src/command_buffer.s
+
+# target to generate assembly for a file
+src/command_buffer.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.s
+.PHONY : src/command_buffer.cpp.s
+
+src/draw.o: src/draw.cpp.o
+.PHONY : src/draw.o
+
+# target to build an object file
+src/draw.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.o
+.PHONY : src/draw.cpp.o
+
+src/draw.i: src/draw.cpp.i
+.PHONY : src/draw.i
+
+# target to preprocess a source file
+src/draw.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.i
+.PHONY : src/draw.cpp.i
+
+src/draw.s: src/draw.cpp.s
+.PHONY : src/draw.s
+
+# target to generate assembly for a file
+src/draw.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/draw.cpp.s
+.PHONY : src/draw.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -280,6 +328,12 @@ help:
 	@echo "... src/GLFWSurfaceProvider.o"
 	@echo "... src/GLFWSurfaceProvider.i"
 	@echo "... src/GLFWSurfaceProvider.s"
+	@echo "... src/command_buffer.o"
+	@echo "... src/command_buffer.i"
+	@echo "... src/command_buffer.s"
+	@echo "... src/draw.o"
+	@echo "... src/draw.i"
+	@echo "... src/draw.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
