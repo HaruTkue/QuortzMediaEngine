@@ -58,3 +58,16 @@ void Draw::OnDrawFrame(){
     commandBuffer->End();
     vulkanCtx.SubmitPresent();
 }
+
+void Draw::OnInitilize(){
+    // 初期起動
+    InitializeVertexBuffer();
+    InitializeGraphicsPipeline();
+}
+void Draw::OnCleanup(){
+    auto& vulkanCtx = VulkanContext::Get();
+    auto device = vulkanCtx.GetVkDevice();
+
+    //GPUがidleになるまで
+    vkDeviceWaitIdle(device);
+}

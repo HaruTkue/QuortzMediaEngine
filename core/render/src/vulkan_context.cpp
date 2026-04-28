@@ -267,15 +267,16 @@ void VulkanContext::AdvanceFrame(){
 void VulkanContext::Cleanup(){
     vkDeviceWaitIdle(m_vkDevice);
     DestoryFrameContexts();
-    vkDestoryCommandPool(m_vkDevice, m_commandPool , nullptr);
-
+    vkDestroyCommandPool(m_vkDevice, m_commandPool , nullptr);
+    //後回しで。
+    /*
     if(m_debugMessenger != VK_NULL_HANDLE){
-        auto func = VK_GET_INSTANCE_PROC_ADDR(m_vkInstance , vkDestroyDebugUtilsMessengerEXT);
+        auto func = vkGetInstanceProcAddr(m_vkInstance , vkDestroyDebugUtilsMessengerEXT);
         if (func != nullptr){
             func(m_vkInstance, m_debugMessenger , nullptr);
         }
         m_debugMessenger = VK_NULL_HANDLE;
-    }
+    }*/
 
     if (m_swapchain)
     {
@@ -287,14 +288,25 @@ void VulkanContext::Cleanup(){
         m_surface = VK_NULL_HANDLE;
     }
 
-    vkDestoryDevice(m_vkDevice, nullptr);
-    vkDestoryInstance(m_vkInstance, nullptr);
+    vkDestroyDevice(m_vkDevice, nullptr);
+    vkDestroyInstance(m_vkInstance, nullptr);
     m_vkDevice = VK_NULL_HANDLE;
     m_vkInstance = VK_NULL_HANDLE;
 }
 void VulkanContext::DestoryFrameContexts(){
     for (auto& frame : m_frameContext){
-        vkDestoryFence(m_vkDevice , frame.inflightFence, nullptr);
+        vkDestroyFence(m_vkDevice , frame.inflightFence, nullptr);
     }
     m_frameContext.clear();
+}
+uint32_t VulkanContext::FindMemoryType(const VkMemoryRequirements& requirements, VkMemoryPropertyFlags properties) const {
+    for (uint32_t i=0 ; i < m_memoryProperties.memoryTypeCount; i++ ){
+        const bool isTypeCompatible = (requirements.memoryTypeBits & (1 << i)) != 0;
+        const bool hasDesiredProperties = (m_memoryProperties.memoryTypes[i].propertyFlags & properties) == properties;
+        if (isTypeCompatible && hasDesiredProperties){
+            //memory prop を満たした場合
+            return 1;
+        }
+    }
+    throw std::runtime_error("failed to find suitable memory type");
 }

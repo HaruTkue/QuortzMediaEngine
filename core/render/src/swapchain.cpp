@@ -185,10 +185,10 @@ void Swapchain::Cleanup(){
     auto& vulkanCtx = VulkanContext::Get();
     auto vkDevice = vulkanCtx.GetVkDevice();
     for (auto& view: m_imageViews){
-        vkDestoryImageView(vkDevice, view , nullptr);
+        vkDestroyImageView(vkDevice, view , nullptr);
     }
     if (m_swapchain){
-        vkDestorySwapchainKHR(vkDevice,  m_swapchain , nullptr);
+        vkDestroySwapchainKHR(vkDevice,  m_swapchain , nullptr);
         m_swapchain = VK_NULL_HANDLE;
     }
     m_images.clear();
