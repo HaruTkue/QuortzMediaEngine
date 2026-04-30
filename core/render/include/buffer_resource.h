@@ -27,12 +27,12 @@ class BufferResource : public GpuResourceBase<T> , public IBufferResource{
 
         bool IsHostAccessible() const override {return (m_memProps & VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT) != 0;}
         VkAccessFlags GetAccessFlags() const override {return m_accessFlags;}
-        void AccessFlags SetAccessFlags(const VkAccessFlags flags) const override { m_accessFlags = flags;}
+        void SetAccessFlags(const VkAccessFlags flags) const override { m_accessFlags = flags;}
         VkBuffer GetVkBuffer() const override { return m_buffer;}
         VkDeviceSize GetBufferSize() const override { return m_size;}
 
         VkDescriptorBufferInfo GetDescriptorInfo() const override;
-    protected;
+    protected:
         BufferResource() = default;
         bool CreateBuffer(const VkBufferCreateInfo& createInfo, VkMemoryPropertyFlags memProps);
         VkBuffer m_buffer{};

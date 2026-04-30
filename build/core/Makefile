@@ -116,6 +116,44 @@ depend:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+core/CMakeFiles/QuortzMediaEngine.dir/rule:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/QuortzMediaEngine.dir/rule
+.PHONY : core/CMakeFiles/QuortzMediaEngine.dir/rule
+
+# Convenience name for target.
+QuortzMediaEngine: core/CMakeFiles/QuortzMediaEngine.dir/rule
+.PHONY : QuortzMediaEngine
+
+# fast build rule for target.
+QuortzMediaEngine/fast:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/build
+.PHONY : QuortzMediaEngine/fast
+
+render/src/viewtest.o: render/src/viewtest.cpp.o
+.PHONY : render/src/viewtest.o
+
+# target to build an object file
+render/src/viewtest.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/render/src/viewtest.cpp.o
+.PHONY : render/src/viewtest.cpp.o
+
+render/src/viewtest.i: render/src/viewtest.cpp.i
+.PHONY : render/src/viewtest.i
+
+# target to preprocess a source file
+render/src/viewtest.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/render/src/viewtest.cpp.i
+.PHONY : render/src/viewtest.cpp.i
+
+render/src/viewtest.s: render/src/viewtest.cpp.s
+.PHONY : render/src/viewtest.s
+
+# target to generate assembly for a file
+render/src/viewtest.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/render/src/viewtest.cpp.s
+.PHONY : render/src/viewtest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... QuortzMediaEngine"
+	@echo "... render/src/viewtest.o"
+	@echo "... render/src/viewtest.i"
+	@echo "... render/src/viewtest.s"
 .PHONY : help
 
 

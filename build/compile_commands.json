@@ -1,9 +1,27 @@
 [
 {
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/QuortzMediaEngine.dir/render/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
+  "output": "core/CMakeFiles/QuortzMediaEngine.dir/render/src/viewtest.cpp.o"
+},
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/file",
+  "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/file/include -g -std=gnu++17 -o CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/asset_path.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/asset_path.cpp",
+  "output": "core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o"
+},
+{
   "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
   "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/GLFWSurfaceProvider.cpp",
   "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/GLFWSurfaceProvider.cpp",
   "output": "core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o"
+},
+{
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
+  "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/buffer_resource.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/buffer_resource.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/buffer_resource.cpp",
+  "output": "core/render/CMakeFiles/engine_renderer.dir/src/buffer_resource.cpp.o"
 },
 {
   "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
@@ -46,11 +64,5 @@
   "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/vulkan_context.cpp",
   "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/vulkan_context.cpp",
   "output": "core/render/CMakeFiles/engine_renderer.dir/src/vulkan_context.cpp.o"
-},
-{
-  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
-  "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -g -std=gnu++17 -o CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
-  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/viewtest.cpp",
-  "output": "core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o"
 }
 ]

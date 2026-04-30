@@ -130,20 +130,6 @@ engine_renderer/fast:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/build
 .PHONY : engine_renderer/fast
 
-# Convenience name for target.
-core/render/CMakeFiles/QuortzMediaEngine.dir/rule:
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/render/CMakeFiles/QuortzMediaEngine.dir/rule
-.PHONY : core/render/CMakeFiles/QuortzMediaEngine.dir/rule
-
-# Convenience name for target.
-QuortzMediaEngine: core/render/CMakeFiles/QuortzMediaEngine.dir/rule
-.PHONY : QuortzMediaEngine
-
-# fast build rule for target.
-QuortzMediaEngine/fast:
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/build
-.PHONY : QuortzMediaEngine/fast
-
 src/GLFWSurfaceProvider.o: src/GLFWSurfaceProvider.cpp.o
 .PHONY : src/GLFWSurfaceProvider.o
 
@@ -167,6 +153,30 @@ src/GLFWSurfaceProvider.s: src/GLFWSurfaceProvider.cpp.s
 src/GLFWSurfaceProvider.cpp.s:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.s
 .PHONY : src/GLFWSurfaceProvider.cpp.s
+
+src/buffer_resource.o: src/buffer_resource.cpp.o
+.PHONY : src/buffer_resource.o
+
+# target to build an object file
+src/buffer_resource.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/buffer_resource.cpp.o
+.PHONY : src/buffer_resource.cpp.o
+
+src/buffer_resource.i: src/buffer_resource.cpp.i
+.PHONY : src/buffer_resource.i
+
+# target to preprocess a source file
+src/buffer_resource.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/buffer_resource.cpp.i
+.PHONY : src/buffer_resource.cpp.i
+
+src/buffer_resource.s: src/buffer_resource.cpp.s
+.PHONY : src/buffer_resource.s
+
+# target to generate assembly for a file
+src/buffer_resource.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/buffer_resource.cpp.s
+.PHONY : src/buffer_resource.cpp.s
 
 src/command_buffer.o: src/command_buffer.cpp.o
 .PHONY : src/command_buffer.o
@@ -294,7 +304,6 @@ src/viewtest.o: src/viewtest.cpp.o
 # target to build an object file
 src/viewtest.cpp.o:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.o
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.o
 .PHONY : src/viewtest.cpp.o
 
 src/viewtest.i: src/viewtest.cpp.i
@@ -303,7 +312,6 @@ src/viewtest.i: src/viewtest.cpp.i
 # target to preprocess a source file
 src/viewtest.cpp.i:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.i
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.i
 .PHONY : src/viewtest.cpp.i
 
 src/viewtest.s: src/viewtest.cpp.s
@@ -312,7 +320,6 @@ src/viewtest.s: src/viewtest.cpp.s
 # target to generate assembly for a file
 src/viewtest.cpp.s:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/src/viewtest.cpp.s
-	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/src/viewtest.cpp.s
 .PHONY : src/viewtest.cpp.s
 
 src/vulkan_context.o: src/vulkan_context.cpp.o
@@ -347,11 +354,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... QuortzMediaEngine"
 	@echo "... engine_renderer"
 	@echo "... src/GLFWSurfaceProvider.o"
 	@echo "... src/GLFWSurfaceProvider.i"
 	@echo "... src/GLFWSurfaceProvider.s"
+	@echo "... src/buffer_resource.o"
+	@echo "... src/buffer_resource.i"
+	@echo "... src/buffer_resource.s"
 	@echo "... src/command_buffer.o"
 	@echo "... src/command_buffer.i"
 	@echo "... src/command_buffer.s"

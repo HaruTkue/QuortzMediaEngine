@@ -81,6 +81,7 @@ clean: editor/clean
 # Directory level rules for directory core
 
 # Recursive "all" directory target.
+core/all: core/CMakeFiles/QuortzMediaEngine.dir/all
 core/all: core/file/all
 core/all: core/network/all
 core/all: core/object/all
@@ -97,6 +98,7 @@ core/preinstall: core/render/preinstall
 .PHONY : core/preinstall
 
 # Recursive "clean" directory target.
+core/clean: core/CMakeFiles/QuortzMediaEngine.dir/clean
 core/clean: core/file/clean
 core/clean: core/network/clean
 core/clean: core/object/clean
@@ -108,7 +110,7 @@ core/clean: core/render/clean
 # Directory level rules for directory core/file
 
 # Recursive "all" directory target.
-core/file/all:
+core/file/all: core/file/CMakeFiles/engine_filesys.dir/all
 .PHONY : core/file/all
 
 # Recursive "preinstall" directory target.
@@ -116,7 +118,7 @@ core/file/preinstall:
 .PHONY : core/file/preinstall
 
 # Recursive "clean" directory target.
-core/file/clean:
+core/file/clean: core/file/CMakeFiles/engine_filesys.dir/clean
 .PHONY : core/file/clean
 
 #=============================================================================
@@ -169,7 +171,6 @@ core/physical/clean:
 
 # Recursive "all" directory target.
 core/render/all: core/render/CMakeFiles/engine_renderer.dir/all
-core/render/all: core/render/CMakeFiles/QuortzMediaEngine.dir/all
 .PHONY : core/render/all
 
 # Recursive "preinstall" directory target.
@@ -178,7 +179,6 @@ core/render/preinstall:
 
 # Recursive "clean" directory target.
 core/render/clean: core/render/CMakeFiles/engine_renderer.dir/clean
-core/render/clean: core/render/CMakeFiles/QuortzMediaEngine.dir/clean
 .PHONY : core/render/clean
 
 #=============================================================================
@@ -197,18 +197,70 @@ editor/clean:
 .PHONY : editor/clean
 
 #=============================================================================
+# Target rules for target core/CMakeFiles/QuortzMediaEngine.dir
+
+# All Build rule for target.
+core/CMakeFiles/QuortzMediaEngine.dir/all:
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/depend
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=1,2 "Built target QuortzMediaEngine"
+.PHONY : core/CMakeFiles/QuortzMediaEngine.dir/all
+
+# Build rule for subdir invocation for target.
+core/CMakeFiles/QuortzMediaEngine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/QuortzMediaEngine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 0
+.PHONY : core/CMakeFiles/QuortzMediaEngine.dir/rule
+
+# Convenience name for target.
+QuortzMediaEngine: core/CMakeFiles/QuortzMediaEngine.dir/rule
+.PHONY : QuortzMediaEngine
+
+# clean rule for target.
+core/CMakeFiles/QuortzMediaEngine.dir/clean:
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/clean
+.PHONY : core/CMakeFiles/QuortzMediaEngine.dir/clean
+
+#=============================================================================
+# Target rules for target core/file/CMakeFiles/engine_filesys.dir
+
+# All Build rule for target.
+core/file/CMakeFiles/engine_filesys.dir/all:
+	$(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/depend
+	$(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=3,4 "Built target engine_filesys"
+.PHONY : core/file/CMakeFiles/engine_filesys.dir/all
+
+# Build rule for subdir invocation for target.
+core/file/CMakeFiles/engine_filesys.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/file/CMakeFiles/engine_filesys.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 0
+.PHONY : core/file/CMakeFiles/engine_filesys.dir/rule
+
+# Convenience name for target.
+engine_filesys: core/file/CMakeFiles/engine_filesys.dir/rule
+.PHONY : engine_filesys
+
+# clean rule for target.
+core/file/CMakeFiles/engine_filesys.dir/clean:
+	$(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/clean
+.PHONY : core/file/CMakeFiles/engine_filesys.dir/clean
+
+#=============================================================================
 # Target rules for target core/render/CMakeFiles/engine_renderer.dir
 
 # All Build rule for target.
 core/render/CMakeFiles/engine_renderer.dir/all:
 	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/depend
 	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target engine_renderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Built target engine_renderer"
 .PHONY : core/render/CMakeFiles/engine_renderer.dir/all
 
 # Build rule for subdir invocation for target.
 core/render/CMakeFiles/engine_renderer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/render/CMakeFiles/engine_renderer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 0
 .PHONY : core/render/CMakeFiles/engine_renderer.dir/rule
@@ -221,32 +273,6 @@ engine_renderer: core/render/CMakeFiles/engine_renderer.dir/rule
 core/render/CMakeFiles/engine_renderer.dir/clean:
 	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/clean
 .PHONY : core/render/CMakeFiles/engine_renderer.dir/clean
-
-#=============================================================================
-# Target rules for target core/render/CMakeFiles/QuortzMediaEngine.dir
-
-# All Build rule for target.
-core/render/CMakeFiles/QuortzMediaEngine.dir/all:
-	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/depend
-	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=1,2 "Built target QuortzMediaEngine"
-.PHONY : core/render/CMakeFiles/QuortzMediaEngine.dir/all
-
-# Build rule for subdir invocation for target.
-core/render/CMakeFiles/QuortzMediaEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/render/CMakeFiles/QuortzMediaEngine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 0
-.PHONY : core/render/CMakeFiles/QuortzMediaEngine.dir/rule
-
-# Convenience name for target.
-QuortzMediaEngine: core/render/CMakeFiles/QuortzMediaEngine.dir/rule
-.PHONY : QuortzMediaEngine
-
-# clean rule for target.
-core/render/CMakeFiles/QuortzMediaEngine.dir/clean:
-	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/clean
-.PHONY : core/render/CMakeFiles/QuortzMediaEngine.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

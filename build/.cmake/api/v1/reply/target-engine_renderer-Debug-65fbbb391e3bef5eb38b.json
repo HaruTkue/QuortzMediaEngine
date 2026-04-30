@@ -98,7 +98,8 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -123,7 +124,8 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -133,6 +135,12 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "core/render/src/GLFWSurfaceProvider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "core/render/src/buffer_resource.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

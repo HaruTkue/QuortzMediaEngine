@@ -1,7 +1,9 @@
 /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles/edit_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles/rebuild_cache.dir
+/mnt/dev_data/Develop/QuortzMediaEngine/build/core/CMakeFiles/QuortzMediaEngine.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/CMakeFiles/edit_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/CMakeFiles/rebuild_cache.dir
+/mnt/dev_data/Develop/QuortzMediaEngine/build/core/file/CMakeFiles/engine_filesys.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file/CMakeFiles/edit_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file/CMakeFiles/rebuild_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/network/CMakeFiles/edit_cache.dir
@@ -11,7 +13,6 @@
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/physical/CMakeFiles/edit_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/physical/CMakeFiles/rebuild_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render/CMakeFiles/engine_renderer.dir
-/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render/CMakeFiles/QuortzMediaEngine.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render/CMakeFiles/edit_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/core/render/CMakeFiles/rebuild_cache.dir
 /mnt/dev_data/Develop/QuortzMediaEngine/build/editor/CMakeFiles/edit_cache.dir

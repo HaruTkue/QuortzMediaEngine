@@ -36,7 +36,11 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "core"
+					"source" : "core",
+					"targetIndexes" : 
+					[
+						0
+					]
 				},
 				{
 					"build" : "core/file",
@@ -47,7 +51,11 @@
 					},
 					"parentIndex" : 1,
 					"projectIndex" : 0,
-					"source" : "core/file"
+					"source" : "core/file",
+					"targetIndexes" : 
+					[
+						1
+					]
 				},
 				{
 					"build" : "core/network",
@@ -94,8 +102,7 @@
 					"source" : "core/render",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						2
 					]
 				},
 				{
@@ -129,23 +136,31 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 6,
-					"id" : "QuortzMediaEngine::@509e33518be291f9b8da",
-					"jsonFile" : "target-QuortzMediaEngine-Debug-28df2b3b31fb1183f982.json",
+					"directoryIndex" : 1,
+					"id" : "QuortzMediaEngine::@57760688d1f824db5d9c",
+					"jsonFile" : "target-QuortzMediaEngine-Debug-33a73b0f6b00d8e18e05.json",
 					"name" : "QuortzMediaEngine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "engine_filesys::@8eee588d46b66fd7e95d",
+					"jsonFile" : "target-engine_filesys-Debug-d023f129064e73ec5b6b.json",
+					"name" : "engine_filesys",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "engine_renderer::@509e33518be291f9b8da",
-					"jsonFile" : "target-engine_renderer-Debug-2daa5ae7e199fe50d422.json",
+					"jsonFile" : "target-engine_renderer-Debug-65fbbb391e3bef5eb38b.json",
 					"name" : "engine_renderer",
 					"projectIndex" : 0
 				}

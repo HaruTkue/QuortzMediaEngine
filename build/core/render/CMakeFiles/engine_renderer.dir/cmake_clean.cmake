@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o"
   "CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o.d"
+  "CMakeFiles/engine_renderer.dir/src/buffer_resource.cpp.o"
+  "CMakeFiles/engine_renderer.dir/src/buffer_resource.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o"
   "CMakeFiles/engine_renderer.dir/src/command_buffer.cpp.o.d"
   "CMakeFiles/engine_renderer.dir/src/draw.cpp.o"

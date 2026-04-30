@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named QuortzMediaEngine
+
+# Build rule for target.
+QuortzMediaEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QuortzMediaEngine
+.PHONY : QuortzMediaEngine
+
+# fast build rule for target.
+QuortzMediaEngine/fast:
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/QuortzMediaEngine.dir/build.make core/CMakeFiles/QuortzMediaEngine.dir/build
+.PHONY : QuortzMediaEngine/fast
+
+#=============================================================================
+# Target rules for targets named engine_filesys
+
+# Build rule for target.
+engine_filesys: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_filesys
+.PHONY : engine_filesys
+
+# fast build rule for target.
+engine_filesys/fast:
+	$(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/build
+.PHONY : engine_filesys/fast
+
+#=============================================================================
 # Target rules for targets named engine_renderer
 
 # Build rule for target.
@@ -129,19 +155,6 @@ engine_renderer/fast:
 	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/build
 .PHONY : engine_renderer/fast
 
-#=============================================================================
-# Target rules for targets named QuortzMediaEngine
-
-# Build rule for target.
-QuortzMediaEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QuortzMediaEngine
-.PHONY : QuortzMediaEngine
-
-# fast build rule for target.
-QuortzMediaEngine/fast:
-	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/QuortzMediaEngine.dir/build.make core/render/CMakeFiles/QuortzMediaEngine.dir/build
-.PHONY : QuortzMediaEngine/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -151,6 +164,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QuortzMediaEngine"
+	@echo "... engine_filesys"
 	@echo "... engine_renderer"
 .PHONY : help
 

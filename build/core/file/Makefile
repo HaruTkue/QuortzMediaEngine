@@ -116,6 +116,44 @@ depend:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+core/file/CMakeFiles/engine_filesys.dir/rule:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/file/CMakeFiles/engine_filesys.dir/rule
+.PHONY : core/file/CMakeFiles/engine_filesys.dir/rule
+
+# Convenience name for target.
+engine_filesys: core/file/CMakeFiles/engine_filesys.dir/rule
+.PHONY : engine_filesys
+
+# fast build rule for target.
+engine_filesys/fast:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/build
+.PHONY : engine_filesys/fast
+
+src/asset_path.o: src/asset_path.cpp.o
+.PHONY : src/asset_path.o
+
+# target to build an object file
+src/asset_path.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o
+.PHONY : src/asset_path.cpp.o
+
+src/asset_path.i: src/asset_path.cpp.i
+.PHONY : src/asset_path.i
+
+# target to preprocess a source file
+src/asset_path.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.i
+.PHONY : src/asset_path.cpp.i
+
+src/asset_path.s: src/asset_path.cpp.s
+.PHONY : src/asset_path.s
+
+# target to generate assembly for a file
+src/asset_path.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.s
+.PHONY : src/asset_path.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... engine_filesys"
+	@echo "... src/asset_path.o"
+	@echo "... src/asset_path.i"
+	@echo "... src/asset_path.s"
 .PHONY : help
 
 

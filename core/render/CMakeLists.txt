@@ -26,5 +26,5 @@ target_link_libraries(engine_renderer PUBLIC
     Vulkan::Vulkan
 )
 
-add_executable(${PROJECT_NAME} src/viewtest.cpp)
+#add_executable("${PROJECT_NAME}_render" src/viewtest.cpp)
 #target_link_libraries(${PROJECT_NAME} PRIVATE engine_renderer)
