@@ -154,6 +154,30 @@ src/asset_path.cpp.s:
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.s
 .PHONY : src/asset_path.cpp.s
 
+src/shader_loader.o: src/shader_loader.cpp.o
+.PHONY : src/shader_loader.o
+
+# target to build an object file
+src/shader_loader.cpp.o:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o
+.PHONY : src/shader_loader.cpp.o
+
+src/shader_loader.i: src/shader_loader.cpp.i
+.PHONY : src/shader_loader.i
+
+# target to preprocess a source file
+src/shader_loader.cpp.i:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.i
+.PHONY : src/shader_loader.cpp.i
+
+src/shader_loader.s: src/shader_loader.cpp.s
+.PHONY : src/shader_loader.s
+
+# target to generate assembly for a file
+src/shader_loader.cpp.s:
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build && $(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.s
+.PHONY : src/shader_loader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -166,6 +190,9 @@ help:
 	@echo "... src/asset_path.o"
 	@echo "... src/asset_path.i"
 	@echo "... src/asset_path.s"
+	@echo "... src/shader_loader.o"
+	@echo "... src/shader_loader.i"
+	@echo "... src/shader_loader.s"
 .PHONY : help
 
 

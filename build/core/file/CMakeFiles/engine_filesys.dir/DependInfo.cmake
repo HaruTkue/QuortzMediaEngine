@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/asset_path.cpp" "core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o" "gcc" "core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o.d"
+  "/mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/shader_loader.cpp" "core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o" "gcc" "core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

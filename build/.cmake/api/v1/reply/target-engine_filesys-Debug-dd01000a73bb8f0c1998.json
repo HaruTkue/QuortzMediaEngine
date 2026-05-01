@@ -79,7 +79,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -97,7 +98,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -107,6 +109,12 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "core/file/src/asset_path.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "core/file/src/shader_loader.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

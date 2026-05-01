@@ -1011,11 +1011,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "The CMake toolchain file"
 				}
 			],
-			"type" : "STRING",
-			"value" : "~/vcpkg/scripts/buildsystems/vcpkg.cmake"
+			"type" : "FILEPATH",
+			"value" : "/home/haru/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
 			"name" : "CMAKE_UNAME",

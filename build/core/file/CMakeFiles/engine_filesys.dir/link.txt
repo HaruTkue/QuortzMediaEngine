@@ -1,2 +1,2 @@
-/usr/bin/ar qc libengine_filesys.a CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o
+/usr/bin/ar qc libengine_filesys.a CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o
 /usr/bin/ranlib libengine_filesys.a

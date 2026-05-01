@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o"
   "CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o.d"
+  "CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o"
+  "CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o.d"
   "libengine_filesys.a"
   "libengine_filesys.pdb"
 )

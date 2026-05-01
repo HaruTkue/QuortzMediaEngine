@@ -83,17 +83,33 @@ core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine_filesys.dir/src/asset_path.cpp.s"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/asset_path.cpp -o CMakeFiles/engine_filesys.dir/src/asset_path.cpp.s
 
+core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o: core/file/CMakeFiles/engine_filesys.dir/flags.make
+core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o: /mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/shader_loader.cpp
+core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o: core/file/CMakeFiles/engine_filesys.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o"
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o -MF CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o.d -o CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/shader_loader.cpp
+
+core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.i"
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/shader_loader.cpp > CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.i
+
+core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.s"
+	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/shader_loader.cpp -o CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.s
+
 # Object files for target engine_filesys
 engine_filesys_OBJECTS = \
-"CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o"
+"CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o" \
+"CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o"
 
 # External object files for target engine_filesys
 engine_filesys_EXTERNAL_OBJECTS =
 
 core/file/libengine_filesys.a: core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o
+core/file/libengine_filesys.a: core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o
 core/file/libengine_filesys.a: core/file/CMakeFiles/engine_filesys.dir/build.make
 core/file/libengine_filesys.a: core/file/CMakeFiles/engine_filesys.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libengine_filesys.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libengine_filesys.a"
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file && $(CMAKE_COMMAND) -P CMakeFiles/engine_filesys.dir/cmake_clean_target.cmake
 	cd /mnt/dev_data/Develop/QuortzMediaEngine/build/core/file && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine_filesys.dir/link.txt --verbose=$(VERBOSE)
 

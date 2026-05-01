@@ -229,12 +229,12 @@ core/CMakeFiles/QuortzMediaEngine.dir/clean:
 core/file/CMakeFiles/engine_filesys.dir/all:
 	$(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/depend
 	$(MAKE) $(MAKESILENT) -f core/file/CMakeFiles/engine_filesys.dir/build.make core/file/CMakeFiles/engine_filesys.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=3,4 "Built target engine_filesys"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=3,4,5 "Built target engine_filesys"
 .PHONY : core/file/CMakeFiles/engine_filesys.dir/all
 
 # Build rule for subdir invocation for target.
 core/file/CMakeFiles/engine_filesys.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/file/CMakeFiles/engine_filesys.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles 0
 .PHONY : core/file/CMakeFiles/engine_filesys.dir/rule
@@ -255,7 +255,7 @@ core/file/CMakeFiles/engine_filesys.dir/clean:
 core/render/CMakeFiles/engine_renderer.dir/all:
 	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/depend
 	$(MAKE) $(MAKESILENT) -f core/render/CMakeFiles/engine_renderer.dir/build.make core/render/CMakeFiles/engine_renderer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Built target engine_renderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/dev_data/Develop/QuortzMediaEngine/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15 "Built target engine_renderer"
 .PHONY : core/render/CMakeFiles/engine_renderer.dir/all
 
 # Build rule for subdir invocation for target.

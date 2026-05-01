@@ -12,6 +12,12 @@
   "output": "core/file/CMakeFiles/engine_filesys.dir/src/asset_path.cpp.o"
 },
 {
+  "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/file",
+  "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/file/include -g -std=gnu++17 -o CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/shader_loader.cpp",
+  "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/file/src/shader_loader.cpp",
+  "output": "core/file/CMakeFiles/engine_filesys.dir/src/shader_loader.cpp.o"
+},
+{
   "directory": "/mnt/dev_data/Develop/QuortzMediaEngine/build/core/render",
   "command": "/usr/bin/c++  -I/mnt/dev_data/Develop/QuortzMediaEngine/core/render/include -isystem /mnt/dev_data/Develop/QuortzMediaEngine/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/engine_renderer.dir/src/GLFWSurfaceProvider.cpp.o -c /mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/GLFWSurfaceProvider.cpp",
   "file": "/mnt/dev_data/Develop/QuortzMediaEngine/core/render/src/GLFWSurfaceProvider.cpp",
